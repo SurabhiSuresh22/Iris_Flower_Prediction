@@ -1,29 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body class="full" style="background-color:#419c9e;">
+    <br><div class="afterheading" style = "color:#213838;">Predicition</div><br>
 
-<body bgcolor=#a3cfb4>
-
-    <center>
-
-        <h1>  PREDICTION :  </h1>
-    
     {%if data == 0%}
-    <h1>Iris-setosa</h1>  
-    <img src='static\setosa.jpg'>  
+    <h1>Iris Setosa</h1>
 
-    {%else%}
-    <h1>Iris-versicolor</h1>
-    <img src='static\verci.jpg'>
-    
+    {%elif data == 1%}
+    <h1>Iris virginica</h1>
+
+    {% else %}
+    <h1>Iris Versicolor</h1>
     {%endif%}
 
         <br><br>
-    <a href='/'>go back to home page</a>
 
-    </center>
-
-</body>
-
+  <a href="/" class="myButton">Back to Home </a>
+  </body>
 </html>
-
-
 
