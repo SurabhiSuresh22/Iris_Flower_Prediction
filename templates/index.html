@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body class = "full" style="background-color:#419c9e;">
+      <div class="prediction_form">
+        <div class="heading" style = "color:#213838;">Iris Flower Species Predicition</div><br>
+        <form method="POST", action="{{url_for('predict')}}">
+          <input type="text", name='a', placeholder="Sepal Length"> <br><br>
+          <input type="text", name='b', placeholder="Sepal Width"> <br><br>
+          <input type="text", name='c', placeholder="Petal Length"> <br><br>
+          <input type="text", name='d', placeholder="Petal Width"> <br><br>
+          <input type="submit" , class="myButton" value='predict' >
+        </form>
+      </div>
+  </body>
+</html>
